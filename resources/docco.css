@@ -1,0 +1,150 @@
+B1;3409;0c/*--------------------- Typography ----------------------------*/
+
+@font-face {
+    font-family: 'aller-light';
+    src: url('fonts/aller-light.eot');
+    src: url('fonts/aller-light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller-light.woff') format('woff'),
+         url('fonts/aller-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aller-bold';
+    src: url('fonts/aller-bold.eot');
+    src: url('fonts/aller-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aller-bold.woff') format('woff'),
+         url('fonts/aller-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'novecento-bold';
+    src: url('fonts/novecento-bold.eot');
+    src: url('fonts/novecento-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/novecento-bold.woff') format('woff'),
+         url('fonts/novecento-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fleurons';
+    src: url('fonts/fleurons.eot');
+    src: url('fonts/fleurons.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fleurons.woff') format('woff'),
+         url('fonts/fleurons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "aller-light";
+  background: url('public/images/gray.png') #fff;
+  background-size: 322px;
+  margin: 0;
+}
+
+hr {
+  height: 1px;
+  background: #ddd;
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #112233;
+  font-weight: normal;
+  font-family: "novecento-bold";
+  text-transform: uppercase;
+  line-height: 1em;
+  margin-top: 50px;
+}
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+
+a {
+  color: #000;
+}
+
+b, strong {
+  font-weight: normal;
+  font-family: "aller-bold";
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin-left: 0;
+  padding: 1px 0 1px 1em;
+}
+  .page blockquote p {
+    font-family: Menlo, Consolas, Monaco, monospace;
+    font-size: 14px; line-height: 19px;
+    color: #999;
+    margin: 10px 0 0;
+    white-space: pre-wrap;
+  }
+
+pre, tt, code {
+  font-family: Menlo, Consolas, Monaco, monospace;
+  font-size: 12px;
+  display: inline-block;
+  border: 1px solid #EAEAEA;
+  background: #f8f8f8;
+  color: #555;
+  padding: 0 5px;
+  line-height: 20px;
+}
+  .page pre {
+    margin: 0;
+    width: 608px;
+    padding: 10px 15px;
+    background: #fcfcfc;
+    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    box-shadow:         inset 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+  }
+    .page pre code {
+      border: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+
+.container {
+    width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    background: rgba(255,255,255, 0.4);
+    overflow: hidden;
+}
+.page {
+    width: 640px;
+    padding: 30px;
+    margin: 30px;
+    background: #fff;
+    font-size: 17px;
+    line-height: 26px;
+}
+.page p {
+    color: #30404f;
+    font-size:18px;
+    margin: 26px 0;
+}
+
+.circular {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("KIDO5186.jpg") no-repeat;
+    background-position:50% 50%;
+}
