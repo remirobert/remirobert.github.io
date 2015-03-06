@@ -18,7 +18,7 @@ highlighter:    pygments
 # Jekyll serve settings
 #
 
-port:           4321
+port:           80
 
 #
 # Jekyll build settings
