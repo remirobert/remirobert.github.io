@@ -1,3 +1,0 @@
-# Todos
-
-- RSS feed template

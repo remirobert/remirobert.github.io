@@ -1,0 +1,99 @@
+// Your custom styles here
+// Import syntax highlighting theme
+@import "syntax";
+
+// Change @link-color can change to whole theme color scheme
+// All other vaiables in `app.less` can be overwritten here
+
+// tan #D2B48C rgb(210,180,140)
+// @link-color: darken(@background-color, 50%);
+// @background-color: tan;
+// @text-color: darken(@background-color, 30%);
+
+// mediumvioletred #C71585 rgb(199,21,133)
+// @link-color: mediumvioletred;
+// @background-color: #fff;
+// @text-color: #000;
+
+// orangered #FF4500 rgb(255,69,0)
+// @link-color: orangered;
+// @background-color: #fff;
+// @text-color: #000;
+
+// indigo (invert) #4B0082 rgb(75,0,130)
+// @link-color: #fff;
+// @background-color: indigo;
+// @text-color: lighten(@background-color, 60%);
+
+// indigo #4B0082 rgb(75,0,130)
+// @link-color: indigo;
+// @background-color: #fff;
+// @text-color: #000;
+
+// limegreen #32CD32 rgb(rgb(50,205,50))
+// @link-color: limegreen;
+// @background-color: #fff;
+// @text-color: darken(@link-color, 30%);
+
+// yellow #FFFF00 rgb(255,255,0)
+// @link-color: #000;
+// @background-color: yellow;
+// @text-color: darken(@background-color, 40%);
+
+// paleturquoise #AFEEEE rgb(175,238,238)
+// @link-color: darken(@background-color, 60%);
+// @background-color: paleturquoise;
+// @text-color: darken(@background-color, 50%);
+
+// crimson #DC143C rgb(220,20,60) × gold #FFD700 rgb(255,215,0)
+// @link-color: crimson;
+// @background-color: gold;
+// @text-color: #000;
+
+// Alternative title color switch
+// Uncomment the following style will enalbe alternative post title color, this is useful when you're using the custom theme from above.
+// .content { li h2 a, header h1, header h1 a { color: @link-color; } }
+// .external span { background: @link-color; }
+
+// Alternative title size
+// By default all heading levels have the same font size, but many people may not like this, so here's an alternative font size stack:
+.content {
+  h3 { font-size: 108%; opacity: .6; }
+  h4 { font-size: 96%;  opacity: .5; }
+  h5 { font-size: 84%;  opacity: .4; }
+  h6 { font-size: 72%;  opacity: .3; }
+}
+
+// amsf.github.io color scheme
+@link-color: #ff00b4;
+@background-color: #fff;
+@text-color: #000;
+@code-color: darken(spin(@link-color, 180), 10%);
+
+// amsf.github.io homepage logo
+.amsf-logo {
+  display: inline-block;
+  @s: 8.6vw;
+  width: @s;
+  height: @s;
+  margin: 1vw;
+  margin-left: 0;
+  vertical-align: middle;
+
+  @media (max-width: 640px) {
+    width: (@s * 2.4);
+    height: (@s * 2.4);
+  }
+
+  path,
+  circle {
+    stroke-width: 76px;
+    stroke-linecap: square;
+  }
+}
+
+.amsf-title {
+  display: inline-block;
+  color: @link-color;
+  vertical-align: middle;
+}

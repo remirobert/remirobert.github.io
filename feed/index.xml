@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Almace Scaffolding</title><subtitle>I make things that don’t suck.</subtitle><updated>2014-09-01T05:53:00+08:00</updated><id>tag:amsf.github.io,2005:/</id><link rel="alternate" type="text/html" hreflang="en" href="http://amsf.github.io/"/><link rel="self" type="application/atom+xml" href="http://amsf.github.io/feed/"/><rights>Copyright © 2014, Tunghsiao Liu</rights><author><name>Tunghsiao Liu</name><uri>http://amsf.github.io/</uri><email>t@sparanoid.com</email></author><entry><title>Welcome to Almace Scaffolding</title><id>tag:amsf.github.io,2014:/almace-scaffolding/</id><link rel="alternate" type="text/html" href="http://amsf.github.io/almace-scaffolding.html"/><updated>2014-06-13T00:00:00+08:00</updated><author><name>Tunghsiao Liu</name><uri>http://amsf.github.io/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="http://amsf.github.io/">
+          
+            &lt;p&gt;&lt;code&gt;amsf&lt;/code&gt;, a.k.a. &lt;strong&gt;Almace Scaffolding&lt;/strong&gt;, a sleek and super-fast responsive theme with only one HTTP request, LESS auto-compile, prefix-free, HTML minification, inlined stylesheets and more. Available for Jekyll right now (will be available for more platforms in the future).&lt;/p&gt;
+
+&lt;p&gt;View documentation and learn more on &lt;a href=&quot;https://github.com/sparanoid/almace-scaffolding&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fully configured Jekyll setup with well-defined &lt;a href=&quot;https://github.com/sparanoid/almace-scaffolding/blob/master/_app/feed-atom.xml&quot;&gt;Atom feed&lt;/a&gt;, &lt;a href=&quot;https://github.com/sparanoid/almace-scaffolding/blob/master/_app/sitemap.xml&quot;&gt;sitemap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A sleek responsive theme, a variant of &lt;a href=&quot;http://sparanoid.com/&quot;&gt;sparanoid.com&lt;/a&gt;, and every minified page generates only one HTTP request &lt;sup id=&quot;fnref1&quot;&gt;&lt;a href=&quot;#fn1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;(Maybe) &lt;a href=&quot;https://github.com/sparanoid/sparanoid.com/commit/9b44b4c0f57c3dd1e828d828a95cc21b992785ce&quot;&gt;the first&lt;/a&gt; template that uses &lt;a href=&quot;http://www.w3.org/TR/css3-values/#viewport-relative-lengths&quot;&gt;viewport relative units&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/sparanoid/almace-scaffolding/blob/master/_config.init.yml&quot;&gt;Tons of configurable settings&lt;/a&gt; for your posts and site customization&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/sparanoid/almace-scaffolding/blob/master/_app/assets/_less/app.less&quot;&gt;Handcrafted stylesheets&lt;/a&gt;. No Bootstrap or other bloated frameworks are used, CSS &amp;lt; 12 KB (Unminified)&lt;/li&gt;
+&lt;li&gt;Theme color scheme, Pygments code highlighting, &lt;a href=&quot;https://dev.twitter.com/docs/cards&quot;&gt;Twitter Cards&lt;/a&gt;, tables, footnotes, GFM, smart quotes are also supported&lt;/li&gt;
+&lt;li&gt;Built with Grunt.js for easy development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Setup&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git@github.com:sparanoid/almace-scaffolding.git
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle install &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; npm install
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;cp _config.init.yml _config.yml
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;grunt serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can go to the &lt;a href=&quot;&quot;&gt;GitHub repository&lt;/a&gt; for detailed setup instructions.&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Go to the &lt;a href=&quot;https://github.com/sparanoid/almace-scaffolding&quot;&gt;GitHub repository&lt;/a&gt; for documentation, downloads, bug reports, and feature requests.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id=&quot;fn1&quot;&gt;
+&lt;p&gt;Only when your posts don’t have fancy sliders or other external media files.&amp;nbsp;&lt;a href=&quot;#fnref1&quot; rev=&quot;footnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
+
+          
+          
+        
+      
+        </content></entry></feed>

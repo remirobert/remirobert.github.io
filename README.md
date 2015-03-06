@@ -1,32 +1,9 @@
-# Sparanoid
-[![Build Status](https://travis-ci.org/sparanoid/sparanoid.com.svg)](https://travis-ci.org/sparanoid/sparanoid.com)
-[![devDependency Status](https://david-dm.org/sparanoid/sparanoid.com/dev-status.svg)](https://david-dm.org/sparanoid/sparanoid.com#info=devDependencies)
+# [amsf.github.io](http://amsf.github.io/)
 
-[Jekyll](https://github.com/jekyll/jekyll) running on [sparanoid.com](http://sparanoid.com/).
+This is a demo how to make [Almace Scaffolding](http://github.com/sparanoid/almace-scaffolding) work well with [GitHub Pages](http://pages.github.com/).
 
-## Setup
+## Things you should take care of
 
-```sh
-$ bundle install && npm install && grunt serve
-```
-
-Need a simpler setup using this theme? Try [AMSF](http://github.com/sparanoid/almace-scaffolding/).
-
-## Author
-
-**Tunghsiao Liu**
-
-- Twitter: @[tunghsiao](http://twitter.com/tunghsiao)
-- GitHub: @[sparanoid](http://github.com/sparanoid)
-
-## Licenses
-
-Following files, directories and their contents are copyright Tunghsiao Liu and licensed under a [CC BY-NC-ND 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/). You may not reuse anything therein without permission:
-
-- `./_app/_posts/`
-- `./_app/apple-touch-icon.png`
-- `./_app/favicon.ico`
-
-All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
-
-© Tunghsiao Liu. Rights reserved as indicated above.
+- You should change your homepage title in [`index.html`](_amsf/_app/index.html)
+- Some variables such as `domain`, `url`, `feed`, and `name` in [`_config.yml`](_amsf/_config.yml)
+- If you changed `feed` variables in `var.yml`, you should also change permalink structure in [`feed-atom.xml`](_amsf/_app/feed-atom.xml)
