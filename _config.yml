@@ -16,7 +16,7 @@ markdown:           rdiscount
 # Navigation
 nav:
   - name:           "About me"
-    href:           "//127.0.0.1:4000/about"
+    href:           "http://remirobert.github.io/about"
 
 # Sass
 sass:
