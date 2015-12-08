@@ -1,65 +1,38 @@
-# Site settings
-title:       Remi ROBERT
-email:       remirobert33530@gmail.com
-author:      Remi ROBERT
-description: "Personnal blog, about iOS development."
-baseurl:     ""
-url:         "http://remirobert.github.io"
-date_format: "%b %-d, %Y"
+# # # # # # # #
+#   K i k o   #
+# # # # # # # #
 
-# Google services
-google_analytics:
-google_verification:
+# Basic
+name:               "📱 Remi"
 
-# Optional features
-animated:             true
-show_related_posts:   false
-show_post_footers:    false
-show_social_icons:    true
-ajaxify_contact_form: false
+# URL
+baseurl:            ""
+#baseurl:            "" #For Root Domain
+permalink:          /:year/:month/:day/:title.html
 
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
+# Markdown
+markdown:           rdiscount
 
-# Facebook Comments plugin
-# (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments: 
-facebook_appid: 
-facebook_comments_number: 10
+# Navigation
+nav:
+  - name:           "About me"
+    href:           "//127.0.0.1:4000/about"
 
-# Social icons
-github_username:
-bitbucket_username:
-stackoverflow_id:
-twitter_username:
-google_plus_id:
-linkedin_username:
-angellist_username:
-medium_id:
-bitcoin_url:
-paypal_url:
-flattr_button:
-
-# Post sharing icons
-show_sharing_icons: false
-share_text: 'Share this post!'
-# Change to 'true' to enable individual icons
-share_facebook: false
-share_twitter: false
-share_googleplus: false
-share_linkedin: false
-share_digg: false
-share_tumblr: false
-share_reddit: false
-share_stumbleupon: false
-share_hackernews: false
-
-# Build settings
-markdown:     kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
-paginate:     4
+# Sass
 sass:
-  compressed: true
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"

@@ -1,19 +1,14 @@
 ---
-layout: page
-title: About Pixyll
+title: About me
 permalink: /about/
 ---
 
-This Jekyll theme was crafted with <3 by [John Otander](http://johnotander.com)
-([@4lpine](https://twitter.com/4lpine)).
+<p class="lead">I am <a href="http://github.com/remirobert">Remi ROBERT</a> 🇫🇷 <strong>iOS</strong> developer, full stack.</p>
 
-Checkout the [Github repository](https://github.com/johnotander/pixyll) to download it,
-request a feature, report a bug, or contribute. It's free, and open source
-([MIT](http://opensource.org/licenses/MIT)).
+Developing apps for iOS since 3 years. Experienced in diverse modules of **Objective-C** and **Swift**.
+I love to code and create awesome projects.
 
-Thanks to the following:
 
-* [BASSCSS](http://basscss.com)
-* [Jekyll](http://jekyllrb.com)
-* [Refills](http://refills.bourbon.io/)
-* [Type Scale](http://type-scale.com/)
+### Questions? Comments? ☕️? Job?
+Let me know [@remi936](https://twitter.com/remi936).    👋😉
+
