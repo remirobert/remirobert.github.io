@@ -70,4 +70,4 @@ RxSwift.combineLatest(fetchQuerry(querry), fetchQuerry(querry)) { (goods1, goods
 }.addDisposableTo(self.disposeBag)
 {% endhighlight %}
 
-So far as we have a **Observable**, we do everything, can be an awsome wrapper for the **Parse SDK**, with a great design.
+So far as we have a **Observable**, we can do a lot of thing.
