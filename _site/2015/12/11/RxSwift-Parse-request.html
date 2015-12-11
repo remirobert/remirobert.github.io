@@ -21,7 +21,7 @@
   </div>
   <p class="lead">How to user <strong>Parse SDK</strong> with <strong>RxSwift</strong></p>
 
-<p>I use <strong>Parse</strong> a lot for my personals projects, or even for hackathons, et some experimentations.
+<p>I use <strong>Parse</strong> a lot for my personals projects, or even for hackathons, and some experimentations.
 So I know well the <strong>iOS SDK</strong>, than <strong>Parse</strong> provide us, and it’s actually really awesome, and very simple to use 😮.
 I am currently trying, to write an extension of all SDK’s method, and class, for <strong>RxSwift</strong>, and use <em>reactive programming</em> pattern with <strong>Parse</strong>.
 So here, just a very brief example of to make a very simple query throw <strong>RxSwift</strong>.</p>
@@ -64,7 +64,8 @@ For this example the idea 💡 is just to wrap the Parse request execution, in a
   <span class="p">}</span>
 <span class="p">}</span><span class="o">.</span><span class="nf">addDisposableTo</span><span class="p">(</span><span class="k">self</span><span class="o">.</span><span class="n">disposeBag</span><span class="p">)</span></code></pre></figure>
 
-<p><strong>Parse</strong> uses currently the <strong>Bolts</strong> framework, which is very awsome, to manage <em>async operation</em>.
+<p><strong>Parse</strong> uses currently the <strong>Bolts</strong> framework, which is very awsome, to manage <em>async operation</em>. 
+So that’s why, using <strong>RxSwift</strong> here is not the best way to do, but only a matter of design. 
 An example how to combine several requests, and then combine the fetched datas, in a very extremely easy example:</p>
 
 <figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kt">RxSwift</span><span class="o">.</span><span class="nf">combineLatest</span><span class="p">(</span><span class="nf">fetchQuerry</span><span class="p">(</span><span class="n">querry</span><span class="p">),</span> <span class="nf">fetchQuerry</span><span class="p">(</span><span class="n">querry</span><span class="p">))</span> <span class="p">{</span> <span class="p">(</span><span class="n">goods1</span><span class="p">,</span> <span class="n">goods2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">PFObject</span><span class="p">]</span> <span class="k">in</span>

@@ -4,7 +4,7 @@ title: RXSwift Parse request
 
 <p class="lead">How to user <strong>Parse SDK</strong> with <strong>RxSwift</strong></p>
 
-I use **Parse** a lot for my personals projects, or even for hackathons, et some experimentations.
+I use **Parse** a lot for my personals projects, or even for hackathons, and some experimentations.
 So I know well the **iOS SDK**, than **Parse** provide us, and it's actually really awesome, and very simple to use 😮.
 I am currently trying, to write an extension of all SDK's method, and class, for **RxSwift**, and use *reactive programming* pattern with **Parse**.
 So here, just a very brief example of to make a very simple query throw **RxSwift**.
@@ -51,7 +51,8 @@ fetchQuerry(querry).subscribe { event in
 }.addDisposableTo(self.disposeBag)
 {% endhighlight %}
 
-**Parse** uses currently the **Bolts** framework, which is very awsome, to manage *async operation*.
+**Parse** uses currently the **Bolts** framework, which is very awsome, to manage *async operation*. 
+So that's why, using **RxSwift** here is not the best way to do, but only a matter of design. 
 An example how to combine several requests, and then combine the fetched datas, in a very extremely easy example:
 
 {% highlight swift %}

@@ -9,7 +9,7 @@
 				<title>RXSwift Parse request</title>
         <description>&lt;p class=&quot;lead&quot;&gt;How to user &lt;strong&gt;Parse SDK&lt;/strong&gt; with &lt;strong&gt;RxSwift&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;I use &lt;strong&gt;Parse&lt;/strong&gt; a lot for my personals projects, or even for hackathons, et some experimentations.
+&lt;p&gt;I use &lt;strong&gt;Parse&lt;/strong&gt; a lot for my personals projects, or even for hackathons, and some experimentations.
 So I know well the &lt;strong&gt;iOS SDK&lt;/strong&gt;, than &lt;strong&gt;Parse&lt;/strong&gt; provide us, and it’s actually really awesome, and very simple to use 😮.
 I am currently trying, to write an extension of all SDK’s method, and class, for &lt;strong&gt;RxSwift&lt;/strong&gt;, and use &lt;em&gt;reactive programming&lt;/em&gt; pattern with &lt;strong&gt;Parse&lt;/strong&gt;.
 So here, just a very brief example of to make a very simple query throw &lt;strong&gt;RxSwift&lt;/strong&gt;.&lt;/p&gt;
@@ -52,7 +52,8 @@ For this example the idea 💡 is just to wrap the Parse request execution, in a
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addDisposableTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;disposeBag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;Parse&lt;/strong&gt; uses currently the &lt;strong&gt;Bolts&lt;/strong&gt; framework, which is very awsome, to manage &lt;em&gt;async operation&lt;/em&gt;.
+&lt;p&gt;&lt;strong&gt;Parse&lt;/strong&gt; uses currently the &lt;strong&gt;Bolts&lt;/strong&gt; framework, which is very awsome, to manage &lt;em&gt;async operation&lt;/em&gt;. 
+So that’s why, using &lt;strong&gt;RxSwift&lt;/strong&gt; here is not the best way to do, but only a matter of design. 
 An example how to combine several requests, and then combine the fetched datas, in a very extremely easy example:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span class=&quot;kt&quot;&gt;RxSwift&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;combineLatest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;fetchQuerry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;querry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fetchQuerry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;querry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;goods1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;goods2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;PFObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
