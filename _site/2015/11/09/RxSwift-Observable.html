@@ -21,78 +21,83 @@
   </div>
   <p class="lead">Discovery of some <strong>observable</strong> creation method very useful for <strong>RxSwift</strong>.</p>
 
-
 <p>I recently discovered reactive programming, after experiencing the <a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a> framework, I started to <a href="https://github.com/ReactiveX/RxSwift">RxSwift</a>.
 This post aims some way to generate <strong>observable</strong> available in the <a href="https://github.com/ReactiveX/RxSwift">RxSwift</a> framework.
-It's also a reminder for my future development, in case 🤔...</p>
+It’s also a reminder for my future development, in case 🤔…</p>
 
-<h3>◼️ generate</h3>
+<h3 id="generate">◼️ generate</h3>
 
-<p><figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">createObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">createObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="kt">RxSwift</span><span class="o">.</span><span class="nf">generate</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span>
    <span class="nv">condition</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="nv">number</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">in</span>
-    <span class="c1">//stop condition</span>
+    <span class="c1">//stop condition
+</span>
     <span class="k">return</span> <span class="n">number</span> <span class="o">!=</span> <span class="mi">1000</span> <span class="p">?</span> <span class="nv">true</span> <span class="p">:</span> <span class="kc">false</span>
   <span class="p">})</span> <span class="p">{</span> <span class="p">(</span><span class="nv">number</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="k">in</span>
-    <span class="c1">//handle the data</span>
-    <span class="c1">//Iterate the counter here</span>
+    <span class="c1">//handle the data
+</span>
+    <span class="c1">//Iterate the counter here
+</span>
     <span class="k">return</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">1</span>
   <span class="p">}</span>
-<span class="p">}</span></code></pre></figure></p>
+<span class="p">}</span></code></pre></figure>
 
-<h3>◼️ repeat</h3>
+<h3 id="repeat">◼️ repeat</h3>
 
-<p><figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">repeatObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">repeatObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="kt">RxSwift</span><span class="o">.</span><span class="nf">repeatElement</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">,</span>
    <span class="kt">MainScheduler</span><span class="o">.</span><span class="n">sharedInstance</span><span class="p">)</span>
-<span class="p">}</span></code></pre></figure></p>
+<span class="p">}</span></code></pre></figure>
 
-<h3>◼️ just</h3>
+<h3 id="just">◼️ just</h3>
 
-<p><figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">jsutObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">jsutObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="kt">RxSwift</span><span class="o">.</span><span class="nf">just</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">)</span>
-<span class="p">}</span></code></pre></figure></p>
+<span class="p">}</span></code></pre></figure>
 
-<h3>◼️ sequence</h3>
+<h3 id="sequence">◼️ sequence</h3>
 
-<p><figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">sequenceObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">sequenceObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="kt">RxSwift</span><span class="o">.</span><span class="nf">sequenceOf</span><span class="p">(</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!!!"</span><span class="p">)</span>
-<span class="p">}</span></code></pre></figure></p>
+<span class="p">}</span></code></pre></figure>
 
-<h3>◼️ range</h3>
+<h3 id="range">◼️ range</h3>
 
-<p><figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">rangeSeqenceObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">rangeSeqenceObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="kt">RxSwift</span><span class="o">.</span><span class="nf">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span> <span class="p">(</span><span class="n">_</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span>
     <span class="k">return</span> <span class="s">"hello world"</span>
   <span class="p">})</span>
-<span class="p">}</span></code></pre></figure></p>
+<span class="p">}</span></code></pre></figure>
 
-<h3>◼️ interval</h3>
+<h3 id="interval">◼️ interval</h3>
 
-<p><figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">intervalObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">intervalObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="kt">RxSwift</span><span class="o">.</span><span class="nf">interval</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="kt">MainScheduler</span><span class="o">.</span><span class="n">sharedInstance</span><span class="p">)</span><span class="o">.</span><span class="nf">map</span><span class="p">({</span> <span class="p">(</span><span class="n">_</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span>
     <span class="k">return</span> <span class="s">"hello"</span>
   <span class="p">})</span>
-<span class="p">}</span></code></pre></figure></p>
+<span class="p">}</span></code></pre></figure>
 
-<h3>◼️ timer</h3>
+<h3 id="timer">◼️ timer</h3>
 
-<p><figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">timerObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">timerObservable</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="kt">RxSwift</span><span class="o">.</span><span class="nf">timer</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="kt">MainScheduler</span><span class="o">.</span><span class="n">sharedInstance</span><span class="p">)</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="p">(</span><span class="n">_</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span>
     <span class="k">return</span> <span class="s">"hello"</span>
   <span class="p">}</span>
-<span class="p">}</span></code></pre></figure></p>
+<span class="p">}</span></code></pre></figure>
 
 <p>As we saw here, <a href="https://github.com/ReactiveX/RxSwift">RxSwift</a> includes a number of convenience variations of Observable generation.
 Which the implementation is very trival, and powerfull. <strong>Awesome</strong> !! 😼👍</p>
 
 <p>Now how to call them :</p>
 
-<p><figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="nf">rangeSeqenceObservable</span><span class="p">()</span><span class="o">.</span><span class="n">subscribeNext</span> <span class="p">{</span> <span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
-  <span class="c1">//Will print hello world 5 times.</span>
-  <span class="c1">//How easy is it .... 😕</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="nf">rangeSeqenceObservable</span><span class="p">()</span><span class="o">.</span><span class="n">subscribeNext</span> <span class="p">{</span> <span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+  <span class="c1">//Will print hello world 5 times.
+</span>
+  <span class="c1">//How easy is it .... 😕
+</span>
   <span class="nf">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-<span class="p">}</span><span class="o">.</span><span class="nf">addDisposableTo</span><span class="p">(</span><span class="k">self</span><span class="o">.</span><span class="n">disposeBag</span><span class="p">)</span></code></pre></figure></p>
+<span class="p">}</span><span class="o">.</span><span class="nf">addDisposableTo</span><span class="p">(</span><span class="k">self</span><span class="o">.</span><span class="n">disposeBag</span><span class="p">)</span></code></pre></figure>
+
 
 </div>
 
