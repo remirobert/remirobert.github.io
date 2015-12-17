@@ -18,6 +18,9 @@ nav:
   - name:           "About me"
     href:           "http://remirobert.github.io/about"
 
+  - name:           "resume"
+    href:           "/resume/index.html"
+    
 # Sass
 sass:
   style:            :compressed

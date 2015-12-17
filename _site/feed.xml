@@ -69,7 +69,7 @@ An example how to combine several requests, and then combine the fetched datas, 
   &lt;span class=&quot;nf&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;combined objects : &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;finalObjects&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;addDisposableTo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;disposeBag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;So far as we have a &lt;strong&gt;Observable&lt;/strong&gt;, we do everything, can be an awsome wrapper for the &lt;strong&gt;Parse SDK&lt;/strong&gt;, with a great design.&lt;/p&gt;
+&lt;p&gt;So far as we have a &lt;strong&gt;Observable&lt;/strong&gt;, we can do a lot of thing.&lt;/p&gt;
 </description>
 				<pubDate>Fri, 11 Dec 2015 00:00:00 +0800</pubDate>
 				<link>/2015/12/11/RxSwift-Parse-request.html</link>
