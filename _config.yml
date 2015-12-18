@@ -3,7 +3,7 @@
 # # # # # # # #
 
 # Basic
-name:               "📱 Remi"
+name:               "📱 Remi k"
 
 # URL
 baseurl:            ""
@@ -20,7 +20,7 @@ nav:
 
   - name:           "resume"
     href:           "/resume/index.html"
-    
+
 # Sass
 sass:
   style:            :compressed
