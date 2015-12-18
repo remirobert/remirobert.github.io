@@ -21,3 +21,6 @@ Let me know [@remi936](https://twitter.com/remi936).    👋😉
 <a href="https://www.instagram.com/remi_robert/?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a><br><a href="https://twitter.com/remi936" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @remi936</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/remirobert" data-style="mega" data-count-href="/remirobert/followers" data-count-api="/users/remirobert#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @remirobert on GitHub">Follow @remirobert</a>
+
+<!-- Place this tag right after the last button or just before your close body tag. -->
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
