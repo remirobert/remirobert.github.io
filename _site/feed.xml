@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
-		<title>📱 Remi</title>
+		<title>📱 Remi k</title>
 		<link></link>
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
@@ -21,7 +21,7 @@
 
 &lt;p&gt;&lt;strong&gt;React Native&lt;/strong&gt; is running throw &lt;strong&gt;Node.js&lt;/strong&gt;, so the installation is actually pretty easy:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;npm install -g react-native-cli&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;npm install -g react-native-cli&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Now you have the &lt;strong&gt;React Native CLI&lt;/strong&gt;, which will help you to start a new App. That’s all you need for now. Let’s jump into our first &lt;strong&gt;React Native&lt;/strong&gt; project right away!&lt;/p&gt;
 
@@ -29,11 +29,11 @@
 
 &lt;p&gt;To create and initiate the base (foundation), of a &lt;strong&gt;React Native&lt;/strong&gt; project, we can use this :&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;react-native init Experiment&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;react-native init Experiment&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;This command, will generate a base project. This is the architecture:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;.
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-powershell&quot; data-lang=&quot;powershell&quot;&gt;.
 ├── android
 │   └── ...
 ├── index.android.js

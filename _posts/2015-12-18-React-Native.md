@@ -16,7 +16,7 @@ So let's try this very excited framework ! 🤓🎉
 
 **React Native** is running throw **Node.js**, so the installation is actually pretty easy:
 
-{% highlight shell %}
+{% highlight PowerShell %}
 npm install -g react-native-cli
 {% endhighlight %}
 
@@ -26,13 +26,13 @@ Now you have the **React Native CLI**, which will help you to start a new App. T
 
 To create and initiate the base (foundation), of a **React Native** project, we can use this :
 
-{% highlight bash %}
+{% highlight PowerShell %}
 react-native init Experiment
 {% endhighlight %}
 
 This command, will generate a base project. This is the architecture:
 
-{% highlight bash %}
+{% highlight PowerShell %}
 .
 ├── android
 │   └── ...
