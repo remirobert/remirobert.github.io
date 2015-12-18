@@ -1,0 +1,67 @@
+---
+title: React Native
+---
+
+![react logo](data:image/png;base64,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)
+
+<p class="lead">Starting to the <strong>React Native</strong> framework ...</p>
+
+As a engaged mobile developer, I obviously heard of **React Native**. When **Facebook** announced it, I was like : "*awwww awesome* 😮"! Now, I thought it was time to experience this framework more deeply, and trying to launch a real production app 📲.
+
+![gif fun](http://i.giphy.com/xTiTnnLkYTDWSOWSHK.gif "excited")
+
+So let's try this very excited framework ! 🤓🎉
+
+### Installing and setup
+
+**React Native** is running throw **Node.js**, so the installation is actually pretty easy:
+
+{% highlight shell %}
+npm install -g react-native-cli
+{% endhighlight %}
+
+Now you have the **React Native CLI**, which will help you to start a new App. That’s all you need for now. Let’s jump into our first **React Native** project right away!
+
+### Creating the project base
+
+To create and initiate the base (foundation), of a **React Native** project, we can use this :
+
+{% highlight bash %}
+react-native init Experiment
+{% endhighlight %}
+
+This command, will generate a base project. This is the architecture:
+
+{% highlight bash %}
+.
+├── android
+│   └── ...
+├── index.android.js
+├── index.ios.js
+├── ios
+│   └── ...
+├── node_modules
+│   └── ...
+└── package.json
+{% endhighlight %}
+
+So, yeah at this point, we already have a cross-plateform app. 😮👉 **Android** and **iOS**.
+For the moment, as an **iOS developer**, I will focus my training only on the **iOS** part.
+
+### First experimentation
+
+My first experimentation, is quite simple. I wanted to make something by my self, without following any tutorial. Just reading and looking arround on the **React Native documentation**.
+
+So, just an app, with a switch (*UISwitch*), which change the background color of its parent *View*, when its value change.
+
+![Image alt]({{ site.baseurl }}/assets/img/demoReactNative.png "image title")
+
+This is the my **index.ios.js** :
+
+<script src="https://gist.github.com/remirobert/f32e92aab4b372f61f83.js"></script>
+
+
+
+### My first impression
+
+My first impression is that I am a little lost. It's like I am doing something else than the iOS development. It's actually pretty different than the classical way. As far as I went throw my experimentations, I didn't see any limitation. *Let's check that in the next episode.*

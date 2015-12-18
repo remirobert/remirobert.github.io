@@ -439,3 +439,45 @@ tbody tr:nth-child(odd) th {
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
 
+
+.site-footer {
+  padding: 1.6em 0 2em;
+  margin-top: 1.5em;
+
+  small {
+    color: #aaa;
+    font-size: .8em;
+    display: block;
+  }
+}
+
+.share {
+  padding: 1.2em 0 0;
+  width: 100%;
+  text-align: right;
+
+  span, a {
+    display: inline-block;
+    color: #787878;
+    text-decoration: none;
+    padding-left: 5px;
+  }
+}
+
+.social {
+  text-align: center;
+  margin: 2em 0;
+
+  li {
+    display: inline-block;
+    padding: 0 .6em;
+  }
+
+  a {
+    color: #999;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+}
+
+
