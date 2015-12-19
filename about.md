@@ -5,6 +5,8 @@ permalink: /about/
 
 <p class="lead">I am <a href="http://github.com/remirobert">Remi ROBERT</a> 🇫🇷 <strong>iOS</strong> developer, full stack.</p>
 
+![Image alt]({{ site.baseurl }}/assets/img/about.jpg "iphone")
+
 Developing apps for iOS since 3 years. Experienced in diverse modules of **Objective-C** and **Swift**.
 I love to code and create awesome projects.
 
