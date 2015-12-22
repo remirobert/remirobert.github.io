@@ -6,6 +6,55 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>React native 🆚 Swift</title>
+        <description>&lt;p&gt;The title of this post is a bit strange and does not reflect entirely the content. I was wondering, after some experimentations, if &lt;strong&gt;React native&lt;/strong&gt; was &lt;strong&gt;faster&lt;/strong&gt; for the development 🤔. I am currently starting to think so. I will show you, with a very simple app. An App that’s displaying an animated Image fetched on internet and a simple label. With auto layout of course. 👊&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/simulator34.png&quot; alt=&quot;Image alt&quot; title=&quot;iphone&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
+&lt;p&gt;Alright, first in iOS, it’s currently not possible to displaying an GIF, with an UIImageView, and Apple doesn’t provide any component. The only solution should be to extract each frames on the GIF to an &lt;strong&gt;UIImage&lt;/strong&gt;, and then use the &lt;strong&gt;UIImageView&lt;/strong&gt; with the &lt;em&gt;animatedImages&lt;/em&gt; property. No way !&lt;/p&gt;
+
+&lt;p&gt;A little bit messy, and hard stuff for nothing. So &lt;strong&gt;cocoapods =&amp;gt; FLAnimatedImage&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Second point, the auto-layout. When you want to use it without StoryBoard, programately, it’s a very big mess, and the API provided by Apple, is not very clear and readable. So one more time : &lt;strong&gt;cocoapods =&amp;gt; SnapKit&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, to create something, simple and clear code, we must to use some extra libraries for &lt;strong&gt;iOS&lt;/strong&gt; (&lt;em&gt;this is only my point of view&lt;/em&gt;).
+This is the PodFile:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;use_frameworks!&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;pod&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;SnapKit&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pod&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;FLAnimatedImage&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/remirobert/4cdb0c04e8329df03289.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;react-native&quot;&gt;React native&lt;/h3&gt;
+&lt;p&gt;For &lt;strong&gt;React native&lt;/strong&gt;, everything is already provided. For the animated image, the &lt;strong&gt;Image&lt;/strong&gt; component, is able, to download an image in async, and display animated Image !! For the auto-layout, we use &lt;strong&gt;flexbox&lt;/strong&gt; here. Extremely clear, and easy to understand. Sounds perfect (&lt;em&gt;maybe it is…&lt;/em&gt;).&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/remirobert/27beba94b8d7e100f077.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;As we see, it’s not a matter of number of lines, but about the complexity. The &lt;strong&gt;iOS&lt;/strong&gt; code, at first, could be difficult to understand due first, about the librairies I am using. &lt;em&gt;It looks like we have a very big and heavy stuff here&lt;/em&gt;. 🙀&lt;/p&gt;
+
+&lt;p&gt;For the &lt;strong&gt;React native&lt;/strong&gt;, it looks very very easy to read. And also because the style is split to the implementation. It lightens the code.
+That’s the power of &lt;strong&gt;React native&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.giphy.com/UXmasLUziR2Te.gif&quot; alt=&quot;swift vs react native&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s all for my comparaison 👋🤓.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 22 Dec 2015 00:00:00 +0800</pubDate>
+				<link>/2015/12/22/React-native-VS-Swift.html</link>
+				<guid isPermaLink="true">/2015/12/22/React-native-VS-Swift.html</guid>
+			</item>
+		
+			<item>
 				<title>React Native first App ☕️</title>
         <description>&lt;p class=&quot;lead&quot;&gt;My very first &lt;strong&gt;React Native&lt;/strong&gt; application 🖖🏼&lt;/p&gt;
 

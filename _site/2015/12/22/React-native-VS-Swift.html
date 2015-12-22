@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>React native 🆚 Swift</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
+  <link rel="stylesheet" href="/style.css">
+  </head>
+<body>
+  <div class="container">
+    <header class="masthead">
+  <h1 class="masthead-title--small">
+    <a href="/">📱 Remi</a>
+  </h1>
+</header>      
+<div class="content post">
+  <h1 class="post-title">React native 🆚 Swift</h1>
+  <div class="post-date">
+    <time>22 Dec 2015</time>
+  </div>
+  <p>The title of this post is a bit strange and does not reflect entirely the content. I was wondering, after some experimentations, if <strong>React native</strong> was <strong>faster</strong> for the development 🤔. I am currently starting to think so. I will show you, with a very simple app. An App that’s displaying an animated Image fetched on internet and a simple label. With auto layout of course. 👊</p>
+
+<p><img src="/assets/img/simulator34.png" alt="Image alt" title="iphone" /></p>
+
+<h3 id="swift">Swift</h3>
+<p>Alright, first in iOS, it’s currently not possible to displaying an GIF, with an UIImageView, and Apple doesn’t provide any component. The only solution should be to extract each frames on the GIF to an <strong>UIImage</strong>, and then use the <strong>UIImageView</strong> with the <em>animatedImages</em> property. No way !</p>
+
+<p>A little bit messy, and hard stuff for nothing. So <strong>cocoapods =&gt; FLAnimatedImage</strong>.</p>
+
+<p>Second point, the auto-layout. When you want to use it without StoryBoard, programately, it’s a very big mess, and the API provided by Apple, is not very clear and readable. So one more time : <strong>cocoapods =&gt; SnapKit</strong>.</p>
+
+<p>So, to create something, simple and clear code, we must to use some extra libraries for <strong>iOS</strong> (<em>this is only my point of view</em>).
+This is the PodFile:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">use_frameworks!</span>
+
+<span class="n">pod</span> <span class="s1">'SnapKit'</span>
+<span class="n">pod</span> <span class="s1">'FLAnimatedImage'</span></code></pre></figure>
+
+<p><br /></p>
+
+<script src="https://gist.github.com/remirobert/4cdb0c04e8329df03289.js"></script>
+
+<p><br /></p>
+
+<h3 id="react-native">React native</h3>
+<p>For <strong>React native</strong>, everything is already provided. For the animated image, the <strong>Image</strong> component, is able, to download an image in async, and display animated Image !! For the auto-layout, we use <strong>flexbox</strong> here. Extremely clear, and easy to understand. Sounds perfect (<em>maybe it is…</em>).</p>
+
+<script src="https://gist.github.com/remirobert/27beba94b8d7e100f077.js"></script>
+
+<p><br /></p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>As we see, it’s not a matter of number of lines, but about the complexity. The <strong>iOS</strong> code, at first, could be difficult to understand due first, about the librairies I am using. <em>It looks like we have a very big and heavy stuff here</em>. 🙀</p>
+
+<p>For the <strong>React native</strong>, it looks very very easy to read. And also because the style is split to the implementation. It lightens the code.
+That’s the power of <strong>React native</strong>.</p>
+
+<p><img src="http://i.giphy.com/UXmasLUziR2Te.gif" alt="swift vs react native" /></p>
+
+<p>That’s all for my comparaison 👋🤓.</p>
+
+</div>
+
+  </div>
+</body>
+
+<div class="clearfix"></div>
+
+</html>
