@@ -1,19 +1,24 @@
 ---
-title: About me
+title:
 permalink: /about/
 ---
 
-<p class="lead">I am <a href="http://github.com/remirobert">Remi ROBERT</a> 🇫🇷 <strong>iOS</strong> developer, full stack.</p>
+<p align="center">
+   <img style="width: 400px;" src="{{ site.baseurl }}/assets/img/13334381_856527351148516_1672236732_o.jpg">
+</p>
 
-![Image alt]({{ site.baseurl }}/assets/img/about.jpg "iphone")
+#Hello
 
-Developing apps for iOS since 3 years. Experienced in diverse modules of **Objective-C** and **Swift**.
-I love to code and create awesome projects.
+<p class="lead">I am <a href="http://github.com/remirobert">Remi ROBERT</a> student, and <strong>iOS</strong> developer 📱.</p>
+Developing apps for iOS since 3 years. Working as freelancer, and by my own.
+I like *music*, *code*, *design*, *traveling*, and to create beautiful stuff 📱🎉.
 
+<br/>
 
 ### Questions ? Comments ? ☕️ ? Job ?
-Let me know [@remi936](https://twitter.com/remi936).    👋😉
+Scan the code to 📩 me 👋😉
 
+<br/>
 
 
 
