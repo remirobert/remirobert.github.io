@@ -1,80 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+
+  <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>📱 Remi</title>
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
-  <link rel="stylesheet" href="/style.css">
-  </head>
-<body>
-  <div class="container">
-    <header class="masthead">        
-  <h1 class="masthead-title">
-    <a href="/">📱 Remi<span>&#39;s blog</span></a>
-  </h1>
-  <nav class="masthead-nav">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>
     
-    <a href="http://remirobert.github.io/about">About me</a>
-    
-    <a href="/resume/index.html">resume</a>
-    
-  </nav>
-</header>
-<div class="content list">
+    Rémi ROBERT | Professional iOS developer
+  </title>
+
+  <!-- Load Javascript and CSS for Semantic UI -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/template/css/semantic-ui/semantic.min.js"></script>
+  <link rel="stylesheet" href="/template/css/semantic-ui/semantic.min.css">
+
+  <!-- Load Techfolio CSS customizations -->
+  <link rel="stylesheet" type="text/css" href="/template/css/stylesheet-default.css">
+  <link rel="stylesheet" type="text/css" href="/template/css/stylesheet-customizations.css">
+
+  <link rel="stylesheet" type="text/css" href="/template/css/print-default.css" media="print">
+  <link rel="stylesheet" type="text/css" href="/template/css/print-customizations.css" media="print">
+
+</head>
 
 
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/2015/12/22/React-native-VS-Swift.html">React native 🆚 Swift</a>
-    </h2>
-    <div class="list-post-date">
-      <time>22 Dec 2015</time>
+  <body>
+    <!-- Home page design with small circular image bisecting card. -->
+
+
+
+
+
+
+<style>
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+</style>
+
+<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="./images/aerial-sanfrancisco.mp4" type="video/mp4"/>
+  </video>
+</div>
+
+<div style="height: 100%; margin-top: -75px" class="ui middle aligned grid ">
+
+  <div class="column">
+
+    <div style="position: relative; top: 75px; z-index: 1" class="ui fluid centered small circular image">
+      <img src="./images/IMG_6019.PNG">
+    </div>
+
+
+    <div style="max-width: 500px; padding-top: 75px; margin-top: 0px" class="ui fluid centered card">
+
+      <div class="center aligned content">
+        <span class="header">Rémi ROBERT</span>
+        <div class="meta">
+          <span class="date">Software engineer </span>
+        </div>
+        <div class="left aligned description">
+          Rémi, is a professional iOS developer, working in freelance.
+        </div>
+      </div>
+      <div class="center aligned content">
+        <div class="description">
+          Interests:
+          
+          internet of things, 
+          
+          mobile, 
+          
+          artificial intelligence, 
+          
+          image processing
+          
+
+        </div>
+      </div>
+      <div class="center aligned extra content">
+        <!-- Used by theme-home-builtin-1,2,3 -->
+
+
+   <a href="http://github.com/remirobert"> <i class="big github icon icon-color"></i> </a>
+
+   <a href="https://www.linkedin.com/in/remirobert"> <i class="big linkedin icon icon-color"></i> </a>
+
+   <a href="http://twitter.com/remi936"> <i class="big twitter icon icon-color"></i> </a>
+
+   <a href="http://instagram.com/remi_robert"> <i class="big instagram icon icon-color"></i> </a>
+
+
+
+  <a href="mailto:remirobert33530@gmail.com"> <i class="big mail square icon icon-color"></i> </a>
+
+      </div>
+      <div class="center aligned content">
+        <a href="/template/projects/">
+          <button class="ui basic button">Projects (11)</button>
+        </a>
+        <!-- <a href="/template/essays/">
+        <button class="ui basic button">Essays (3)</button>
+      </a> -->
+      <a href="/template/bio/">
+        <button class="ui basic button">Resume</button>
+      </a>
     </div>
   </div>
-
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/2015/12/19/React-Native-first-app.html">React Native first App ☕️</a>
-    </h2>
-    <div class="list-post-date">
-      <time>19 Dec 2015</time>
-    </div>
-  </div>
-
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/2015/12/18/React-Native.html">React Native</a>
-    </h2>
-    <div class="list-post-date">
-      <time>18 Dec 2015</time>
-    </div>
-  </div>
-
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/2015/12/11/RxSwift-Parse-request.html">RXSwift Parse request</a>
-    </h2>
-    <div class="list-post-date">
-      <time>11 Dec 2015</time>
-    </div>
-  </div>
-
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="/2015/12/09/RxSwift-Observable.html">RXSwift Observables</a>
-    </h2>
-    <div class="list-post-date">
-      <time>09 Dec 2015</time>
-    </div>
-  </div>
-
+</div>
 
 </div>
 
-  </div>
-</body>
+    <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
 
-<div class="clearfix"></div>
+<script>
+  $('.ui.embed').embed();
+</script>
+
+
+  </body>
 
 </html>

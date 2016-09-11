@@ -1,0 +1,134 @@
+{
+  "basics": {
+    "name": "Rémi ROBERT",
+    "label": "Software engineer ",
+    "picture": "./images/IMG_6019.PNG",
+    "email": "remirobert33530@gmail.com",
+    "phone": "+33 695116381",
+    "website": "https://mmaluhia.github.io",
+    "summary": "Rémi, is a professional iOS developer, working in freelance.",
+    "profiles": [
+      {
+        "network": "github",
+        "username": "remirobert",
+        "url": "http://github.com/remirobert"
+      },
+      {
+        "network": "linkedin",
+        "username": "remirobert",
+        "url": "https://www.linkedin.com/in/remirobert"
+      },
+      {
+        "network": "twitter",
+        "username": "remi936",
+        "url": "http://twitter.com/remi936"
+      },
+      {
+        "network": "instagram",
+        "username": "remi_robert",
+        "url": "http://instagram.com/remi_robert"
+      }
+    ]
+  },
+  "interests": [
+    {
+      "name": "internet of things",
+      "keywords": [
+        "Arduino",
+        "TI MSP430"
+      ]
+    },
+    {
+      "name": "mobile",
+      "keywords": [
+        "iOS",
+        "Android",
+        "Swift",
+        "Java",
+        "Objective-c"
+      ]
+    },
+    {
+      "name": "artificial intelligence",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "image processing",
+      "keywords": [
+        "OpenCV",
+        "AVFoundation"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "level": "",
+      "keywords": [
+        "C",
+        "Javascript",
+        "Java",
+        "Objective-c",
+        "swift",
+        "node.js"
+      ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "level": "",
+      "keywords": [
+        "MacOS",
+        "Ubuntu",
+        "Git/GitHub",
+        "g++"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "EPITECH - European Institute of Technology",
+      "area": "Computer Science, master degree (expected Spring, 2017)",
+      "startDate": "2013-09-01",
+      "endDate": "Present",
+      "courses": [
+      ]
+    },
+    {
+      "institution": "同济大学 Tongji university (Shanghai)",
+      "area": "Computer Science, master degree (expected Spring, 2017)",
+      "startDate": "2015-09-01",
+      "endDate": "Present",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Fabzat (France Bordeaux)",
+      "position": "iOS developer",
+      "website": "http://www.fabzat.com",
+      "startDate": "2015-04-01",
+      "endDate": "2015-08-01",
+      "summary": "",
+      "highlights": [
+        "iOS developer. Creating an iOS application for creating your minecraft avatar. Through your own login or trending list of famous player.
+        You can customize your avatar, adding him directly from the original game items!",
+        "And then the application allows you to print your avatar in 3D.
+        technology: Objective-c, SceneKit",
+      ]
+    },
+    {
+      "company": "Extentia Information Technology (Pune India)",
+      "position": "iOS developer",
+      "website": "www.extentia.com",
+      "startDate": "2013-07-01",
+      "endDate": "2013-12-01",
+      "summary": "",
+      "highlights": [
+        "Internship in Extentia information technology.",
+        "I worked on several projects in iOS team, and I was also able to make a website with Django Python."
+      ]
+    }
+  ]
+}

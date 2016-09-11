@@ -1,0 +1,17 @@
+body {
+  background-color: #f2f2f2; }
+
+.ui.menu {
+  background: #dadada; }
+
+.icon-color {
+  color: #5a5a5a; }
+
+.list-padding ul li {
+  padding: 5px 0px; }
+.list-padding ol li {
+  padding: 5px 0px; }
+
+.no-bottom {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important; }
