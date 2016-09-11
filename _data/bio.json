@@ -2,7 +2,7 @@
   "basics": {
     "name": "Rémi ROBERT",
     "label": "Software engineer ",
-    "picture": "./images/IMG_6019.PNG",
+    "picture": "{{ BASE_URL }}/images/IMG_6019.PNG",
     "email": "remirobert33530@gmail.com",
     "phone": "+33 695116381",
     "website": "https://mmaluhia.github.io",
