@@ -17,7 +17,6 @@ summary: Mincraft avatar builder.
   <img class="ui image" src="../images/minecraft3.png">
 </div>
 
-<img class="ui medium right floated rounded image" src="../images/searinity1.png">
 
 This avatar builder allows to create its modeled his **minecraft** avatar and customize it.
 
