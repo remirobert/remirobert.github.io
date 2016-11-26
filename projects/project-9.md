@@ -7,7 +7,7 @@ permalink: projects/Koko
 date: 2016
 labels:
   - Objective-c
-summary: ocial network app.
+summary: Anonymous Social network app.
 ---
 
 <div class="ui small rounded images">

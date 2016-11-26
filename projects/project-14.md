@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: images/IMG_7401.PNG
-title: Coupon network
+title: Coupon network FR
 permalink: projects/CWallet
 date: 2016
 labels:
